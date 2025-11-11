@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(151, 136, 1);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: goldenrod
+}
+
+fieldset {
+    border: 2px solid black
+}
+
+.challengesField {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .challengesField {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .challengesField {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.challengeOption {
+    border: 1px solid black;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.challengeOption input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.challengeOption figcaption {
+    margin-top: 5px;
+}
+
+.challengeOption img {
+    width: 20vw;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.knowTheLandsField {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    font-style: italic;
+}
+
+.lands {
+    text-align: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.lands img {
+    width: 80vw;
+    height: 40vh;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Mock</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Welcome, Tarnished</h1>
+        </div>
+        <nav>
+            <div class="location">Choose a starting location:</div>
+            <div class="nav">The Lands Between</div>
+            <div class="nav">The Land of Shadow</div>
+        </nav>
+
+    </header>
+    <main>
+
+        <section>
+            <form action="#">
+                <fieldset>
+                    <label for="name">State your name:</label>
+                    <input id="name" type="text" required placeholder="Tarnished of no renown">
+                    <label for="background">State your background:</label>
+                    <select id="background" name=background>
+                        <option value="commoner">Commoner</option>
+                        <option value="erdtree">Erdtree believer</option>
+                        <option value="carian">Carian affiliated</option>
+                        <option value="nox">Night worshipper</option>
+                        <option value="recusant">Recusant</option>
+                        <option value="exiled">Exiled</option>
+                    </select>
+                    <label for="date">Date of departure:</label>
+                    <input id="date" type="date">
+                </fieldset>
+                <fieldset>
+                    <legend>What <a href="#" target="_blank"><i>challenge</i></a> will you face?</legend>
+                    <div class="challengesField">
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge1" name="challenge" value="1" checked>
+                            <label for="challenge1">The Goddess of Rot.</label>
+                            <figure><img src="/img/Elden Ring Malenia.png" alt="Malenia">
+                                <figcaption>Malenia, Blade of Miquella</figcaption>
+                            </figure>
+                        </div>
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge2" name="challenge" value="2">
+                            <label for="challenge2">The accursed children of the Eternal.</label>
+                            <figure><img src="/img/Elden Ring Omen Twins.jpg" alt="Omen Twins">
+                                <figcaption>The Omen Twins</figcaption>
+                            </figure>
+                        </div>
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge3" name="challenge" value="3">
+                            <label for="challenge3">Last human devotee of the Gloam Eyed Queen.</label>
+                            <figure><img src="/img/Elden Ring Vargram and GGS.png" alt="Vargram">
+                                <figcaption>Vargram, the Raging Wolf</figcaption>
+                            </figure>
+                        </div>
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge4" name="challenge" value="4">
+                            <label for="challenge4">The Elden Lord of an age long past.</label>
+                            <figure><img src="/img/Elden Ring Placidusax 1.jpg" alt="Placidusax">
+                                <figcaption>Dragonlord Placidusax</figcaption>
+                            </figure>
+                        </div>
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge5" name="challenge" value="5">
+                            <label for="challenge5">Sister of the Carian Queen and bride of the Impaler.</label>
+                            <figure><img src="/img/Elden Ring Rellana.png" alt="Rellana">
+                                <figcaption>Rellana, Twin Moon Knight</figcaption>
+                            </figure>
+                        </div>
+                        <div class="challengeOption">
+                            <input type="radio" id="challenge6" name="challenge" value="6">
+                            <label for="challenge6">A Great Jar who lives as a warrior to its last.</label>
+                            <figure><img src="/img/Iron Fist Alexander.png" alt="Alexander">
+                                <figcaption>Iron Fist Alexander</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What are your proficiencies?</legend>
+                    <input type="checkbox" name="proficiencies" value="1">Daggers
+                    <input type="checkbox" name="proficiencies" value="2">Straight Swords
+                    <input type="checkbox" name="proficiencies" value="3">Axes
+                    <input type="checkbox" name="proficiencies" value="4">Hammers
+                    <input type="checkbox" name="proficiencies" value="5">Greatswords
+                    <input type="checkbox" name="proficiencies" value="6">Halberds
+                    <input type="checkbox" name="proficiencies" value="7">Colossal Weapons
+                    <input type="checkbox" name="proficiencies" value="8">Bows
+                    <input type="checkbox" name="proficiencies" value="9">Incantations
+                    <input type="checkbox" name="proficiencies" value="10">Sorceries
+                </fieldset>
+                <fieldset>
+                    <legend>Any last words?</legend>
+                    <legend for="message">Tarnished message:</legend>
+                    <textarea id="message" rows="5" cols="40"></textarea>
+                </fieldset>
+                <section>
+                    <button type="submit" name="submit">Submit</button>
+                </section>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <table>
+                <caption>Statistics of bosses</caption>
+                <thead>
+                    <tr>
+                        <td>Adversary</td>
+                        <td>Malenia</td>
+                        <td>Omen Twins</td>
+                        <td>Vargram</td>
+                        <td>Placidusax</td>
+                        <td>Rellana</td>
+                        <td>Alexander</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- gerar numeros aleatorios -->
+                        <td>Victories</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Defeats</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total fights</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <div class="title">
+                <h1>Know the lands</h1>
+            </div>
+            <div class="knowTheLandsField">
+                <div class="lands">
+                    <figure><img src="/img/Elden Ring Liurnia.png" alt="Liurnia of the Lakes">
+                        <figcaption>Liurnia of the Lakes</figcaption>
+                    </figure>
+                </div>
+                <div class="lands">
+                    <figure><img src="/img/Elden Ring Radahn Arena Night.jpg" alt="Wailing Dunes">
+                        <figcaption>Wailing Dunes</figcaption>
+                    </figure>
+                </div>
+                <div class="lands">
+                    <figure><img src="/img/Elden Ring Siofra River.png" alt="Siofra River">
+                        <figcaption>Siofra River</figcaption>
+                    </figure>
+                </div>
+                <div class="lands">
+                    <figure> <img src="/img/Elden Ring Print 9.png" alt="Altus Plateau">
+                        <figcaption>Altus Plateau</figcaption>
+                    </figure>
+                </div>
+                <div class="lands">
+                    <figure><img src="/img/Elden Ring Print 8.png" alt="Mountaintops of the Giants">
+                        <figcaption>Mountaintops of the Giants</figcaption>
+                    </figure>
+                </div>
+                <div class="lands">
+                    <figure><img src="/img/Elden Ring Shadow of the Erdtree 3.jpg" alt="Ancient Ruins of Rauh">
+                        <figcaption>Ancient Ruins of Rauh</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="footer">
+            <p>
+                Seek the Elden Ring
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                Become Elden Lord
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
