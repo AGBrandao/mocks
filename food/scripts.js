@@ -20,19 +20,19 @@
   'Fibras': ['Amora', 'Brócolis', 'Berinjela', 'Vegetais folhosos', 'Abobrinha', 'Chuchu'],
   'Gorduras saturadas': ['Manteiga', 'Queijo', 'Carnes gordas', 'Óleo de coco', 'Creme de leite', 'Bacon'],
   'Monoinsaturadas': ['Azeite de oliva', 'Abacate', 'Amêndoas', 'Caju', 'Amendoins', 'Avelãs'],
-  'Poli-insaturados': ['Peixes', 'Nozes', 'Linhaça', 'Óleos vegetais', 'Chia', 'Sementes'],
+  'Poli-insaturadas': ['Peixes', 'Nozes', 'Linhaça', 'Óleos vegetais', 'Chia', 'Sementes'],
   'Aminoácidos': ['Ovos', 'Carne', 'Frango', 'Laticínios', 'Leguminosas', 'Tofu']
 };
 
   const dietRules = {
-  'low_carb': ['Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos','Gorduras saturadas'],
-  'mediterranean': ['Carboidratos simples', 'Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos'],
-  'bluezone': ['Carboidratos simples', 'Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos'],
+  'low_carb': ['Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos','Gorduras saturadas'],
+  'mediterranean': ['Carboidratos simples', 'Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos'],
+  'bluezone': ['Carboidratos simples', 'Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos'],
   'carnivore': ['Gorduras saturadas', 'Aminoácidos'],
-  'paleo': ['Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
-  'vegetarian': ['Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
-  'vegan': ['Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
-  'empty': ['Fibras', 'Poli-insaturados', 'Monoinsaturados', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples']
+  'paleo': ['Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
+  'vegetarian': ['Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
+  'vegan': ['Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples'],
+  'empty': ['Fibras', 'Poli-insaturadas', 'Monoinsaturadas', 'Aminoácidos','Gorduras saturadas', 'Carboidratos simples']
 };
 
   const macronutrientsDiv = document.getElementById('macronutrients');
@@ -184,7 +184,7 @@ function filtrarItensPorDieta(grupo, dieta) {
       const proibidos = ['Pães', 'Tapioca', 'Massas', 'Cereais'];
       itens = itens.filter(item => !proibidos.includes(item));
     }
-    if (grupo === 'Poli-insaturados') {
+    if (grupo === 'Poli-insaturadas') {
       // Supondo que leguminosas e tubérculos estão incluídos, removê-los
       const proibidos = ['Óleos vegetais'];
       itens = itens.filter(item => !proibidos.includes(item));
@@ -204,7 +204,7 @@ function filtrarItensPorDieta(grupo, dieta) {
       const proibidos = ['Bacon', 'Carnes gordas'];
       itens = itens.filter(item => !proibidos.includes(item));
     }
-        if (grupo === 'Poli-insaturados') {
+        if (grupo === 'Poli-insaturadas') {
       // Supondo que leguminosas e tubérculos estão incluídos, removê-los
       const proibidos = ['Peixes'];
       itens = itens.filter(item => !proibidos.includes(item));
@@ -224,7 +224,7 @@ function filtrarItensPorDieta(grupo, dieta) {
       const proibidos = ['Bacon', 'Manteiga', 'Queijo', 'Carnes gordas', 'Creme de leite'];
       itens = itens.filter(item => !proibidos.includes(item));
     }
-        if (grupo === 'Poli-insaturados') {
+        if (grupo === 'Poli-insaturadas') {
       // Supondo que leguminosas e tubérculos estão incluídos, removê-los
       const proibidos = ['Peixes'];
       itens = itens.filter(item => !proibidos.includes(item));
