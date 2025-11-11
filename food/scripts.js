@@ -10,8 +10,8 @@
   { name: 'Carboidratos simples', sources: ['Frutas', 'Vegetais', 'Grãos integrais', 'Legumes', 'Tubérculos'] },
   { name: 'Fibras', sources: ['Frutas', 'Vegetais', 'Grãos integrais', 'Legumes', 'Tubérculos'] },
   { name: 'Gorduras saturadas', sources: ['Manteiga', 'Queijo', 'Carnes gordas', 'Óleo de coco', 'Creme'] },
-  { name: 'Monoinsaturados', sources: ['Azeite de oliva', 'Abacate', 'Nozes', 'Sementes', 'Amendoins'] },
-  { name: 'Poli-insaturados', sources: ['Peixes', 'Nozes', 'Sementes', 'Óleos vegetais', 'Frutos do mar'] },
+  { name: 'Monoinsaturadas', sources: ['Azeite de oliva', 'Abacate', 'Nozes', 'Sementes', 'Amendoins'] },
+  { name: 'Poli-insaturadas', sources: ['Peixes', 'Nozes', 'Sementes', 'Óleos vegetais', 'Frutos do mar'] },
   { name: 'Aminoácidos', sources: ['Ovos', 'Carne', 'Frango', 'Laticínios', 'Leguminosas'] }
 ];
 
@@ -19,7 +19,7 @@
   'Carboidratos simples': ['Cereais', 'Massas', 'Tapioca', 'Frutas doces', 'Pães', 'Mel'],
   'Fibras': ['Amora', 'Brócolis', 'Berinjela', 'Vegetais folhosos', 'Abobrinha', 'Chuchu'],
   'Gorduras saturadas': ['Manteiga', 'Queijo', 'Carnes gordas', 'Óleo de coco', 'Creme de leite', 'Bacon'],
-  'Monoinsaturados': ['Azeite de oliva', 'Abacate', 'Amêndoas', 'Caju', 'Amendoins', 'Avelãs'],
+  'Monoinsaturadas': ['Azeite de oliva', 'Abacate', 'Amêndoas', 'Caju', 'Amendoins', 'Avelãs'],
   'Poli-insaturados': ['Peixes', 'Nozes', 'Linhaça', 'Óleos vegetais', 'Chia', 'Sementes'],
   'Aminoácidos': ['Ovos', 'Carne', 'Frango', 'Laticínios', 'Leguminosas', 'Tofu']
 };
@@ -297,7 +297,7 @@ function gerarRefeicao() {
   }
 
   // Mostra o resultado
-  resultadoDiv.innerHTML = '<h3>Ideias para alimentação de um dia:</h3><ul>' +
+  resultadoDiv.innerHTML = '<h3>Ideias para alimentação em um dia:</h3><ul>' +
     resultadoItens.map(item => `<li>${item}</li>`).join('') +
     '</ul>';
 }
