@@ -224,6 +224,11 @@ function filtrarItensPorDieta(grupo, dieta) {
       const proibidos = ['Bacon', 'Manteiga', 'Queijo', 'Carnes gordas', 'Creme de leite'];
       itens = itens.filter(item => !proibidos.includes(item));
     }
+        if (grupo === 'Carboidratos simples') {
+      // Supondo que leguminosas e tubérculos estão incluídos, removê-los
+      const proibidos = ['Mel'];
+      itens = itens.filter(item => !proibidos.includes(item));
+    }
         if (grupo === 'Poli-insaturadas') {
       // Supondo que leguminosas e tubérculos estão incluídos, removê-los
       const proibidos = ['Peixes'];
